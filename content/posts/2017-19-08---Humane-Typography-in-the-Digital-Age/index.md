@@ -1,9 +1,9 @@
 ---
-title: Humane Typography in the Digital Age
+title: hello world
 date: "2017-08-19T22:40:32.169Z"
 template: "post"
 draft: false
-slug: "/posts/humane-typography-in-the-digital-age"
+slug: "/posts/hello-world"
 category: "Typography"
 tags:
   - "Design"
