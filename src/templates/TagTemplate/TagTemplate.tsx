@@ -71,6 +71,10 @@ export const query = graphql`
             category
             description
             slug
+            socialImage {
+              publicURL
+              relativePath
+            }
           }
         }
       }

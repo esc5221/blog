@@ -4,6 +4,8 @@ import { graphql } from "gatsby";
 
 import { Layout } from "@/components/Layout";
 import { Meta } from "@/components/Meta";
+import { Sidebar } from "@/components/Sidebar";
+import { Page } from "@/components/Page";
 import { Post } from "@/components/Post";
 import { useSiteMetadata } from "@/hooks";
 import { Node } from "@/types";

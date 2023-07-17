@@ -21,6 +21,10 @@ const postsQuery = async (graphql: CreatePagesArgs["graphql"]) => {
             frontmatter {
               template
               slug
+              socialImage {
+                publicURL
+              relativePath
+              }
             }
             fields {
               slug

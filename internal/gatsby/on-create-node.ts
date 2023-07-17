@@ -14,7 +14,7 @@ const onCreateNode: GatsbyNode["onCreateNode"] = ({
 
   if (node.internal.type === "MarkdownRemark") {
     const { frontmatter, parent }: types.Edge["node"] = node;
-    const { tags, category, slug } = frontmatter || {};
+    const { tags, category, slug, socialImage } = frontmatter || {};
 
     if (slug) {
       const dirname = parent && getNode(parent)?.relativeDirectory;
@@ -51,6 +51,10 @@ const onCreateNode: GatsbyNode["onCreateNode"] = ({
       );
 
       createNodeField({ node, name: "categorySlug", value });
+    }
+
+    if (socialImage) {
+      createNodeField({ node, name: "socialImagePath", value: socialImage });
     }
   }
 };

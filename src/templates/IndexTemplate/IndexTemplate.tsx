@@ -60,6 +60,10 @@ export const query = graphql`
             title
             date
             slug
+            socialImage {
+              publicURL
+              relativePath
+            }
           }
         }
       }

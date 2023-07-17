@@ -50,7 +50,7 @@ export default {
                   edges: Array<types.Edge>;
                 };
               };
-            }) =>
+            }) => {
               allMarkdownRemark.edges.map(({ node }) => ({
                 ...node.frontmatter,
                 date: node?.frontmatter?.date,
@@ -62,7 +62,8 @@ export default {
                   site.siteMetadata.url +
                   (node.frontmatter?.slug || node.fields?.slug),
                 custom_elements: [{ "content:encoded": node.html }],
-              })),
+              }));
+            },
             query: `
               {
                 allMarkdownRemark(
@@ -81,6 +82,10 @@ export default {
                         title
                         slug
                         description
+                        socialImage {
+                          publicURL
+              relativePath
+                        }
                       }
                     }
                   }
@@ -186,13 +191,6 @@ export default {
             },
           ],
         },
-      },
-    },
-    {
-      resolve: "@sentry/gatsby",
-      options: {
-        dsn: process.env.SENTRY_DSN,
-        tracesSampleRate: 1,
       },
     },
     "gatsby-plugin-image",

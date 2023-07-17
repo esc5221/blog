@@ -54,7 +54,7 @@ export const Head: React.FC<Props> = ({ data }) => {
     frontmatter: {
       title: pageTitle,
       description: pageDescription = "",
-      socialImage,
+      socialImage
     },
   } = data.markdownRemark;
   const description = pageDescription || subtitle;

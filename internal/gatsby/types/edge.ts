@@ -1,5 +1,9 @@
 import { Node as GatsbyNode } from "gatsby";
 
+interface SocialImage {
+  publicURL?: string;
+}
+
 interface Frontmatter {
   date?: string;
   slug?: string;
@@ -7,6 +11,7 @@ interface Frontmatter {
   category?: string;
   description?: string;
   tags?: Array<string>;
+  socialImage?: SocialImage;
 }
 
 interface Fields {

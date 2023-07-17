@@ -2,6 +2,7 @@
 
 .sidebar {
   width: 100%;
+  max-width: 340px;
 
   .inner {
     @include padding(1, 0.75, 0);

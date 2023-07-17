@@ -1,5 +1,5 @@
 ---
-title: hello world
+title: argocd-image-updater 적용하기
 date: "2017-08-19T22:40:32.169Z"
 template: "post"
 draft: false
@@ -9,7 +9,7 @@ tags:
   - "Design"
   - "Typography"
   - "Web Development"
-description: "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts."
+description: "argocd-image-updater를 적용하여, pull 방식의 k8s gitops를 적용"
 socialImage: "./media/42-line-bible.jpg"
 ---
 
