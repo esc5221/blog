@@ -50,7 +50,7 @@ export default {
                   edges: Array<types.Edge>;
                 };
               };
-            }) => {
+            }) =>
               allMarkdownRemark.edges.map(({ node }) => ({
                 ...node.frontmatter,
                 date: node?.frontmatter?.date,
@@ -62,8 +62,7 @@ export default {
                   site.siteMetadata.url +
                   (node.frontmatter?.slug || node.fields?.slug),
                 custom_elements: [{ "content:encoded": node.html }],
-              }));
-            },
+              })),
             query: `
               {
                 allMarkdownRemark(
