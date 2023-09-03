@@ -34,11 +34,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
+    margin: 0.5rem
   }
 
   .item {
-    @include margin-bottom(1.25);
-    margin: 1 1;
+    margin: 2.0rem 0;
 
     &:last-child {
       @include margin-bottom(0.5);
