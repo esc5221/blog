@@ -17,7 +17,7 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
       <div className={styles.item} key={edge.node.fields.slug}>
         <div className={styles.row}>
           <Image
-            alt="hello"
+            alt="image"
             path={edge.node.frontmatter.socialImage.relativePath}
             className={styles.image}
           />
@@ -26,7 +26,6 @@ const Feed: React.FC<Props> = ({ edges }: Props) => (
               <Link
                 className={styles.link}
                 to={edge.node.frontmatter?.slug || edge.node.fields.slug}
-                style={{ fontSize: "1.5rem" }}
               >
                 {edge.node.frontmatter.title}
               </Link>
