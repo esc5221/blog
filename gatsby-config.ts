@@ -83,7 +83,7 @@ export default {
                         description
                         socialImage {
                           publicURL
-              relativePath
+                          relativePath
                         }
                       }
                     }

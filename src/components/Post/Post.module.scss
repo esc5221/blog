@@ -2,6 +2,8 @@
 @import "src/assets/scss/mixins";
 
 .post {
+  padding: 0.6rem 0rem;
+
   .content {
     @include margin-auto();
   }
@@ -21,13 +23,49 @@
   .buttons {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+    @include padding(0.5, 0);
     @include margin(1, 0, 0, 0);
 
     .buttonArticles {
       @include margin(0, 0.5, 0, 0);
     }
+  }
+}
+
+.post_header {
+  height: 20rem;
+
+  // display all children image as stacked layers at the same position
+  position: relative;
+  top: 10px;
+  // make image to center of viewport
+  // left: calc(50% - 50vw);
+  overflow: hidden;
+
+  .header_image {
+    width: calc(20rem * 16 / 9);
+    height: 20rem;
+    aspect-ratio: 16/9;
+    position: absolute;
+    // center of viewport
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header_image_background {
+    width: 100%;
+    height: 20rem;
+    filter: brightness(0.9) blur(16px);
+    opacity: 0.8;
+
+
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1);
   }
 }
 
@@ -44,7 +82,6 @@
     .buttons {
       left: 30px;
       max-width: none;
-      position: fixed;
       top: 30px;
       @include margin(0, 0.5, 0, 0);
     }

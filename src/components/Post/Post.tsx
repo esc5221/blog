@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import type { Node } from "@/types";
 
 import { Author } from "./Author";
-import { Comments } from "./Comments";
+import { Image } from "@/components/Image";
 import { Content } from "./Content";
 import { Meta } from "./Meta";
 import { Tags } from "./Tags";
@@ -31,14 +31,22 @@ const Post: React.FC<Props> = ({ post }: Props) => {
 
   return (
     <div className={styles.post}>
-      <button
-        onClick={() => {
-          console.log("slug", slug);
-        }}
-      />
       <div className={styles.buttons}>
         <Button className={styles.buttonArticles} title="All Articles" to="/" />
         <ThemeSwitcher />
+      </div>
+
+      <div className={styles.post_header}>
+        <Image
+          alt="header-image"
+          path={post.frontmatter.socialImage.relativePath}
+          className={styles.header_image}
+        />
+        <Image
+          alt="header-image-background"
+          path={post.frontmatter.socialImage.relativePath}
+          className={styles.header_image_background}
+        />
       </div>
 
       <div className={styles.content}>
