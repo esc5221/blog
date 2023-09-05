@@ -1,9 +1,9 @@
 {
-  "title": "Blog by lullu",
+  "title": "Dev blog by lullu",
   "url": "https://esc5221.github.io",
-  "subtitle": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+  "subtitle": "lullu's developer blog",
   "copyright": "",
-  "googleAnalyticsId": "UA-73379983-2",
+  "googleAnalyticsId": "",
   "disqusShortname": "",
   "postsLimit": 8,
   "pathPrefix": "/blog",
