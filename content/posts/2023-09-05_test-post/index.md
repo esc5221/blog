@@ -31,6 +31,57 @@ setup을 한다.
 ![caputre_vscode_2.png](/media/caputre_vscode_2.png)
 _vscode capture 화면_
 
+```python
+from typing import List
+
+class Solution:
+    """
+    Iterable returned by QuerySet.values_list(flat=True) that yields single
+    values.
+    """
+    def twoSum(self, nums: List[int], target: int) -> List[int]
+        for i, n in enumerate(nums):
+            complement = target - n
+
+            if complement in nums[i + 1:]:
+                return nums.index(n), nums[i + 1:].index(complement) + (i + 1)
+
+if __name__ == '__main__':
+    nums = [2, 7, 11, 15]
+    target = 9
+    sol = Solution()
+    print(sol.twoSum(nums, target))
+
+def median(pool):
+    copy = sorted(pool)
+    size = len(copy)
+    if size % 2 == 1:
+        return copy[(size - 1) / 2]
+    else:
+        return (copy[size/2 - 1] + copy[size/2]) / 2
+```
+_two_sum.py_
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+```
+_pod.yaml_
+
+```bash
+$ kubectl apply -f pod.yaml
+```
+
+
+
 But, through this transition, the book lost a large part of its humanity. The machine took over most of the process but craftsmanship was still a part of it. The typefaces were cut manually by the first punch cutters. The paper was made by hand. The illustrations and ornaments were still being hand drawn. These were the remains of the craftsmanship that went almost extinct in the times of Eric Gill.
 
 ## 2. github pages에 배포하기

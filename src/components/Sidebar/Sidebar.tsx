@@ -28,7 +28,7 @@ const Sidebar = ({ isIndex }: Props) => {
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
         <Copyright copyright={copyright} />
-        <p>
+        <div>
           {tags
             .sort((a, b) => b.totalCount - a.totalCount) // Sort tags in descending order
             .map((tag) => (
@@ -38,7 +38,7 @@ const Sidebar = ({ isIndex }: Props) => {
                 </Link>
               </li>
             ))}
-        </p>
+        </div>
       </div>
     </div>
   );
