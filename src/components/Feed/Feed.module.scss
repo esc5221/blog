@@ -110,11 +110,14 @@
 
       .category {
         .link {
-          color: var(--color-secondary);
+          color: var(--color-typographic-base-font);
           font-size: $typographic-small-font-size;
           font-weight: 600;
           text-transform: lowercase;
-          background-color: var(--color-sidebar-border);
+          // background-color: var(--color-sidebar-border);
+          border-color: var(--color-sidebar-border);
+          border-style: solid;
+          border-width: 1px;
           border-radius: 0.5rem;
           padding: 0.2rem 0.5rem;
 

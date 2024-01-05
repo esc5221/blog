@@ -117,6 +117,7 @@ export default {
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
           "gatsby-remark-external-links",
+          "gatsby-remark-link-preview",
         ],
       },
     },
